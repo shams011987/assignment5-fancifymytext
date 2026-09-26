@@ -1,37 +1,49 @@
 <!doctype html>
 <html lang="en-US">
-<head>
-  <meta charset="utf-8">
-  <title>Fancify My Text</title>
-  <script src="fancifymytext.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Fancify My Text</title>
 
-<body>
-  <h1>Fancify My Text</h1>
+    <script src="fancifymytext.js"></script>
+  </head>
 
-  <fieldset>
-    <legend>Text</legend>
-    <textarea id="textArea" rows="4" cols="30"></textarea>
-  </fieldset>
+  <body>
+    <h1>Fancify my Text</h1>
 
-  <fieldset>
-    <legend>Fancify</legend>
+    <fieldset>
+      <legend>Text</legend>
 
-    <button onclick="biggerText()">Bigger!</button>
+      <textarea id="textArea" rows="4" cols="30"></textarea>
+    </fieldset>
 
-    <br><br>
+    <fieldset>
+      <legend>Fancify</legend>
 
-    <input type="radio" id="fancy" name="style" onchange="fancifyText()">
-    <label for="fancy">FancyShmancy</label>
+      <button onclick="biggerText()">Bigger!</button>
 
-    <br>
+      <br><br>
 
-    <input type="radio" id="boring" name="style" onchange="fancifyText()">
-    <label for="boring">BoringBetty</label>
+      <input
+        type="radio"
+        id="fancy"
+        name="style"
+        onchange="fancifyText()"
+      />
+      <label for="fancy">FancyShmancy</label>
 
-    <br><br>
+      <br>
 
-    <button onclick="mooText()">Moo</button>
-  </fieldset>
-</body>
+      <input
+        type="radio"
+        id="boring"
+        name="style"
+        onchange="fancifyText()"
+      />
+      <label for="boring">BoringBetty</label>
+
+      <br><br>
+
+      <button onclick="mooText()">Moo</button>
+    </fieldset>
+  </body>
 </html>
