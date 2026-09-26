@@ -1,5 +1,6 @@
 function biggerText() {
   alert("Hello, world!");
+
   document.getElementById("textArea").style.fontSize = "24pt";
 }
 
@@ -26,10 +27,13 @@ function mooText() {
   var sentences = text.split(".");
 
   for (var i = 0; i < sentences.length - 1; i++) {
-    var words = sentences[i].trim().split(" ");
+    var sentence = sentences[i].trim();
 
-    if (words.length > 0) {
+    if (sentence.length > 0) {
+      var words = sentence.split(" ");
+
       words[words.length - 1] = words[words.length - 1] + "-Moo";
+
       sentences[i] = words.join(" ");
     }
   }
